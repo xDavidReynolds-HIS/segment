@@ -1,6 +1,6 @@
 {
   "name": "@zerobias-org/segment-zerobias-t_rtls",
-  "version": "1.0.0-rc.1",
+  "version": "1.0.0",
   "description": "Real-Time Location System (RTLS) segment artifact",
   "author": "team@zerobias.com",
   "license": "ISC",
@@ -15,19 +15,20 @@
     "correct:deps": "tsx ../../../scripts/correctDeps.ts"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://pkg.zerobias.org"
   },
   "files": [
-    "index.yml"
+    "index.yml",
+    "npm-shrinkwrap.json"
   ],
-  "zerobias": {
+  "auditmation": {
     "dataloader-version": "3.29.26",
     "import-artifact": "segment",
     "package": "zerobias.t_rtls.segment"
   },
   "dependencies": {
-    "@auditlogic/vendor-zerobias": "latest",
-    "@zerobias-org/segment-zerobias-c_bpao": "latest",
-    "@zerobias-org/segment_type-zerobias": "latest"
+    "@auditlogic/vendor-zerobias": "*",
+    "@zerobias-org/segment-zerobias-c_bpao": "*",
+    "@zerobias-org/segment_type-zerobias": "*"
   }
 }
