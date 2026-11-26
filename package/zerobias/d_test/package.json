@@ -1,6 +1,6 @@
 {
   "name": "@zerobias-org/segment-zerobias-d_test",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Test1",
   "author": "team@zerobias.com",
   "license": "ISC",
@@ -15,11 +15,12 @@
     "correct:deps": "tsx ../../../scripts/correctDeps.ts"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://pkg.zerobias.org"
   },
   "files": [
     "index.yml",
     "logo.svg",
+    "npm-shrinkwrap.json",
     "supports.yml"
   ],
   "auditmation": {
@@ -29,7 +30,7 @@
     "deprecated": true
   },
   "dependencies": {
-    "@auditlogic/vendor-zerobias": "latest",
-    "@zerobias-org/segment_type-zerobias": "latest"
+    "@auditlogic/vendor-zerobias": "*",
+    "@zerobias-org/segment_type-zerobias": "*"
   }
 }

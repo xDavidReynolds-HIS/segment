@@ -1,6 +1,6 @@
 {
   "name": "@zerobias-org/segment-zerobias-c_dai",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Deployment and Infrastructure segment artifact",
   "author": "opignault@zerobias.com",
   "license": "ISC",
@@ -15,10 +15,11 @@
     "correct:deps": "tsx ../../../scripts/correctDeps.ts"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://pkg.zerobias.org"
   },
   "files": [
     "index.yml",
+    "npm-shrinkwrap.json",
     "supports.yml"
   ],
   "auditmation": {
@@ -27,8 +28,8 @@
     "package": "zerobias.c_dai.segment"
   },
   "dependencies": {
-    "@auditlogic/vendor-zerobias": "latest",
-    "@zerobias-org/segment-zerobias-d_sd": "latest",
-    "@zerobias-org/segment_type-zerobias": "latest"
+    "@auditlogic/vendor-zerobias": "*",
+    "@zerobias-org/segment-zerobias-d_sd": "*",
+    "@zerobias-org/segment_type-zerobias": "*"
   }
 }
